@@ -13,6 +13,6 @@ def validate_username(inputstr):
     """
     validates a username string
     """
-    pattern = r"[0-9a-zA-ZäöüßÄÖÜẞ\-_]+\Z"
+    pattern = r"[0-9a-zA-ZäöüßÄÖÜẞ\-_ ]+\Z"
     match = regex.match(pattern, inputstr)
     return match is not None
