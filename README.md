@@ -1,2 +1,2 @@
 # py_input_validator
-A module validationg different kinds of user input
+A module validating different kinds of user input
