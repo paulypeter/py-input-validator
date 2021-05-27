@@ -12,7 +12,10 @@ def validate_pw(inputstr):
 def validate_username(inputstr):
     """
     validates a username string
+
+    regex source:
+    https://stackoverflow.com/a/46413626
     """
-    pattern = r"[0-9a-zA-ZäöüßÄÖÜẞ\-_ ]+\Z"
+    pattern = r"[\p{L}\p{N}\-\.\_ ]+\Z"
     match = regex.match(pattern, inputstr)
     return match is not None
